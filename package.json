@@ -36,5 +36,10 @@
     },
     "volta": {
         "node": "16.20.0"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
     }
 }
