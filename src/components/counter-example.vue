@@ -8,9 +8,9 @@ const counter = useCounterStore();
   <h1>{{ msg }}</h1>
 
   <div class="card">
-    <button class="card__button" type="button" @click="counter.increment()">increase</button>
+    <button class="card__button-increase" type="button" @click="counter.increment()">increase</button>
     <p>{{ counter.count }}</p>
-    <button class="card__button" type="button" @click="counter.decrement()">decrease</button>
+    <button class="card__button-decrease" type="button" @click="counter.decrement()">decrease</button>
   </div>
 </template>
 
