@@ -1,18 +1,21 @@
 <script setup lang="ts">
 import { useCounterStore } from '../stores/counter';
+import { storeToRefs } from 'pinia'
+const { count } = storeToRefs(useCounterStore());
 defineProps<{ msg: string }>();
-const counter = useCounterStore();
+const { increment, decrement } = useCounterStore();
 </script>
 
 <template>
   <h1>{{ msg }}</h1>
 
   <div class="card">
-    <button class="card__button-increase" type="button" @click="counter.increment()">increase</button>
-    <p>{{ counter.count }}</p>
-    <button class="card__button-decrease" type="button" @click="counter.decrement()">decrease</button>
+    <button class="card__button-increase" type="button" @click="increment()">increase</button>
+    <p>{{ count }}</p>
+    <button class="card__button-decrease" type="button" @click="decrement()">decrease</button>
   </div>
 </template>
+
 
 <style lang="scss" scoped>
 .card {

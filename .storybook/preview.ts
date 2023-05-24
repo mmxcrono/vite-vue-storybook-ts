@@ -1,4 +1,10 @@
-import type { Preview } from '@storybook/vue3';
+import { setup, Preview } from '@storybook/vue3';
+
+import { createPinia } from 'pinia';
+
+setup((app) => {
+  app.use(createPinia())
+});
 
 const preview: Preview = {
   parameters: {
@@ -11,5 +17,4 @@ const preview: Preview = {
     },
   },
 };
-
 export default preview;

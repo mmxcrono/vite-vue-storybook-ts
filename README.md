@@ -9,3 +9,6 @@ Public example of vite-vue-storybook-ts related works
 - `pnpm i`
 - `pnpm dev`
 
+## Storybook
+
+- `pnpm run storybook`
