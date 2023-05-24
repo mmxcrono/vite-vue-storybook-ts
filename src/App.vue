@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import Counter from './components/Counter.vue'
+import CounterExample from './components/counter-example.vue'
 </script>
 
 <template>
-  <Counter msg="Vite + Vue + Pinia: Counter" />
+  <CounterExample msg="Vite + Vue + Pinia: CounterExample" />
 </template>
 
 <style scoped>
