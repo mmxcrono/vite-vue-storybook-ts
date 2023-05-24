@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import CounterExample from './counter-example.vue'
+import CounterExample from './CounterExample.vue'
 import { createTestingPinia } from '@pinia/testing'
 import { useCounterStore } from '../stores/counter'
 
