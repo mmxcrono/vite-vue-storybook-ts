@@ -1,5 +1,5 @@
-import { Meta, StoryObj } from "@storybook/vue3";
-import CounterExampleVue from "./CounterExample.vue";
+import { Meta, StoryObj } from '@storybook/vue3';
+import CounterExampleVue from './CounterExample.vue';
 
 const meta = {
   title: 'Example/Counter',
@@ -16,6 +16,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    msg: 'Primary',
+    msg: 'Counter Example',
   },
 };

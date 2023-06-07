@@ -1,9 +1,9 @@
 import { setup, Preview } from '@storybook/vue3';
-
 import { createPinia } from 'pinia';
+import '../src/style.css';
 
 setup((app) => {
-  app.use(createPinia())
+  app.use(createPinia());
 });
 
 const preview: Preview = {
