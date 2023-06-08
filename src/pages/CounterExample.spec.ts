@@ -8,7 +8,7 @@ test('renders CounterExample', () => {
 
   const wrapper = mount(CounterExample, {
     props: {
-      msg,
+      title: msg,
     },
     global: {
       plugins: [

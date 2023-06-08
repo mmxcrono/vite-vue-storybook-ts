@@ -1,5 +1,5 @@
 {
-  "name": "vue",
+  "name": "vite-vue-storybook-ts",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -18,8 +18,9 @@
   "dependencies": {
     "happy-dom": "6.0.4",
     "pinia": "^2.1.3",
+    "vite-svg-loader": "^4.0.0",
     "vue": "^3.3.4",
-    "vue-dompurify-html": "^4.1.4"
+    "vue-router": "4"
   },
   "devDependencies": {
     "@pinia/testing": "^0.1.2",

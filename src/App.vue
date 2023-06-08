@@ -1,10 +1,21 @@
 <script setup lang="ts">
-import CounterExample from './components/CounterExample.vue'
+import VueLogo from './assets/vue.svg';
 </script>
 
 <template>
-  <CounterExample msg="Vite + Vue + Pinia: CounterExample" />
+  <VueLogo />
+  <nav class="navigation">
+    <router-link to="/">Home</router-link>
+    <router-link to="/counter">Counter</router-link>
+  </nav>
+  <router-view />
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+.navigation {
+  gap: 16px;
+  display: flex;
+  justify-content: space-around;
+  padding: 16px;
+}
 </style>
