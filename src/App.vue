@@ -3,7 +3,7 @@ import VueLogo from './assets/vue.svg';
 </script>
 
 <template>
-  <VueLogo />
+  <img :src="VueLogo" />
   <nav class="navigation">
     <router-link to="/">Home</router-link>
     <router-link to="/counter">Counter</router-link>
