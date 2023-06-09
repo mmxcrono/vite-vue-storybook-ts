@@ -1,6 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import UserNav from '../components/UserNav.vue';
+</script>
 
 <template>
+  <UserNav />
   <div>Home</div>
 </template>
 
