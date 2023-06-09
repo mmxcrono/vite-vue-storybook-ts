@@ -39,7 +39,6 @@ export const useUserStore = defineStore('user', {
       const randomUsers: RandomUsers = await (await fetch(url)).json();
 
       this.user = randomUsers?.results[0] ?? null;
-      console.log({ user: this.user, randomUsers });
       return this.user;
     },
   },
