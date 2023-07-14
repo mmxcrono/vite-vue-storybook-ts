@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import UserNav from '../components/UserNav.vue';
+import HelloUser from '@/components/HelloUser.vue';
 </script>
 
 <template>
-  <UserNav />
+  <HelloUser />
   <div>Home</div>
 </template>
 
