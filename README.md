@@ -1,6 +1,6 @@
 # vite-vue-storybook-ts
 
-Public example of vite-vue-storybook-ts related works
+This is a boilerplate feor Vite + Vue + Storybook in TypeScript with Pinia for state management.
 
 ## Local Setup
 
