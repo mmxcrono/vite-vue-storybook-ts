@@ -1,6 +1,6 @@
 # vite-vue-storybook-ts
 
-This is a boilerplate feor Vite + Vue + Storybook in TypeScript with Pinia for state management.
+This is a boilerplate for Vite + Vue + Storybook in TypeScript with Pinia for state management.
 
 ## Local Setup
 
