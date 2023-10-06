@@ -11,5 +11,3 @@ if (!user.value) {
 <template>
   <div>Hello, {{ user?.name.first }} {{ user?.name.last }}</div>
 </template>
-
-<style lang="scss" scoped></style>

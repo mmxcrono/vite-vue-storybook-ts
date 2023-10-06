@@ -1,7 +1,9 @@
 import { mount } from '@vue/test-utils';
-import CounterExample from './CounterExample.vue';
 import { createTestingPinia } from '@pinia/testing';
-import { useCounterStore } from '../stores/counter';
+
+import { useCounterStore } from '@/stores/counter';
+
+import CounterExample from './CounterExample.vue';
 
 test('renders CounterExample', () => {
   const msg = 'My Message';

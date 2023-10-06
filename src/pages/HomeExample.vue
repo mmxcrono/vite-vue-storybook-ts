@@ -3,8 +3,6 @@ import HelloUser from '@/components/HelloUser.vue';
 </script>
 
 <template>
-  <HelloUser />
-  <div>Home</div>
+  <h1 class="text-3xl my-4 px-4">Home</h1>
+  <HelloUser class="p-8"/>
 </template>
-
-<style scoped></style>

@@ -5,10 +5,10 @@ This is a boilerplate for Vite + Vue + Storybook in TypeScript with Pinia for st
 ## Local Setup
 
 - Install [Volta](https://docs.volta.sh/guide/getting-started)
-- `volta install pnpm`
-- `pnpm i`
-- `pnpm dev`
+- `volta install npm`
+- `npm i`
+- `npm dev`
 
 ## Storybook
 
-- `pnpm run storybook`
+- `npm run storybook`

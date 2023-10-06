@@ -1,21 +1,16 @@
-<script setup lang="ts">
-import VueLogo from './assets/vue.svg';
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <img :src="VueLogo" />
-  <nav class="navigation">
-    <router-link to="/">Home</router-link>
-    <router-link to="/counter">Counter</router-link>
-  </nav>
-  <router-view />
-</template>
+  <div class="bg-sky-300 min-h-screen">
+    <header>
+      <nav class="gap-8 flex justify-around p-8">
+        <router-link to="/">Home</router-link>
+        <router-link to="/counter">Counter</router-link>
+      </nav>
+    </header>
+    <main>
 
-<style lang="scss" scoped>
-.navigation {
-  gap: 16px;
-  display: flex;
-  justify-content: space-around;
-  padding: 16px;
-}
-</style>
+      <router-view />
+    </main>
+  </div>
+</template>

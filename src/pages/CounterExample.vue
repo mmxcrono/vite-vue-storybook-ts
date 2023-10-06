@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { useCounterStore } from '../stores/counter';
 import { storeToRefs } from 'pinia';
+
+import { useCounterStore } from '@/stores/counter';
 
 const { count } = storeToRefs(useCounterStore());
 defineProps<{ title?: string }>();
@@ -8,24 +9,10 @@ const { increment, decrement } = useCounterStore();
 </script>
 
 <template>
-  <div class="card">
-    <h1 class="title">{{ title ?? 'Counter' }}</h1>
+  <div class="bg-slate-300 p-4">
+    <h1 class="text-3xl">{{ title ?? 'Counter' }}</h1>
     <button class="card__button-increase" type="button" @click="increment()">increase</button>
     <p class="card__count">{{ count }}</p>
     <button class="card__button-decrease" type="button" @click="decrement()">decrease</button>
   </div>
 </template>
-
-<style lang="scss" scoped>
-.card {
-  /* BEM naming convention */
-  &__button {
-    border: 2px solid transparent;
-  }
-
-  &__count {
-    text-align: center;
-    font-size: 16pt;
-  }
-}
-</style>

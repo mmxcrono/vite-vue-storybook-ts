@@ -1,6 +1,6 @@
 import { Preview, setup } from '@storybook/vue3';
 import { createPinia } from 'pinia';
-import '../src/scss/style.scss';
+import '@/index.css';
 
 setup((app) => {
   app.use(createPinia());
