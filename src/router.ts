@@ -1,15 +1,11 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
-import CounterExampleVue from './pages/CounterExample.vue';
-import HomeExampleVue from './pages/HomeExample.vue';
+
+import HomePage from './pages/HomePage.vue';
+import FormsPage from './pages/FormsPage.vue';
 
 const routes = [
-  { path: '/', component: HomeExampleVue },
-  {
-    name: 'Counter',
-    path: '/counter',
-    component: CounterExampleVue,
-    props: true,
-  },
+  { path: '/', component: HomePage },
+  { path: '/forms', component: FormsPage },
 ];
 
 export const router = createRouter({
