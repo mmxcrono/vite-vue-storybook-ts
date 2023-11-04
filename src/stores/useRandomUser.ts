@@ -24,7 +24,7 @@ type RandomUsers = {
   results: User[];
 };
 
-export const useUserStore = defineStore('user', {
+export const useRandomUser = defineStore('user', {
   state: (): {
     user: User | null;
   } => {
@@ -33,7 +33,7 @@ export const useUserStore = defineStore('user', {
     };
   },
   actions: {
-    async fetchUser() {
+    async fetchRandomUser() {
       const url = 'https://randomuser.me/api/';
 
       const randomUsers: RandomUsers = await (await fetch(url)).json();

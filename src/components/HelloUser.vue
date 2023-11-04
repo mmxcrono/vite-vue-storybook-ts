@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { storeToRefs } from "pinia";
-import { useUserStore } from "@/stores/useUserStore";
+import { useRandomUser } from "@/stores/useRandomUser";
 
-const { user } = storeToRefs(useUserStore());
+const { user } = storeToRefs(useRandomUser());
 if (!user.value) {
-  useUserStore().fetchUser();
+  useRandomUser().fetchRandomUser();
 }
 </script>
 
