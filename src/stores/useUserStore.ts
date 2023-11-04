@@ -1,7 +1,7 @@
 // https://randomuser.me/api/
 import { defineStore } from 'pinia';
 
-interface User {
+type User = {
   gender: 'male' | 'female';
   name: {
     first: string;
@@ -18,11 +18,11 @@ interface User {
     medium: string;
     large: string;
   };
-}
+};
 
-interface RandomUsers {
+type RandomUsers = {
   results: User[];
-}
+};
 
 export const useUserStore = defineStore('user', {
   state: (): {
