@@ -8,5 +8,5 @@ const { title } = defineProps({
 </script>
 
 <template>
-  <h1 class="my-4 px-4 text-3xl">{{ title }}</h1>
+  <h1 class="p-4 text-3xl">{{ title }}</h1>
 </template>
